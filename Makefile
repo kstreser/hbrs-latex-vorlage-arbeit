@@ -1,6 +1,6 @@
 DOCUMENT_NAME = Arbeit
 # The flag "--shell-escape" is needed by the package "minted"
-COMPILER = latexmk -lualatex --jobname=$(DOCUMENT_NAME) --output-directory=out --shell-escape
+COMPILER = latexmk -pvc -lualatex --jobname=$(DOCUMENT_NAME) --output-directory=out --shell-escape
 
 default | help:
 	@echo 'make | Zeigt die Hilfe'
